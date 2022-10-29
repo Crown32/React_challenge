@@ -6,7 +6,7 @@ module.exports = {
   },
   daisyui: {
     //TODO: add dark mode
-    themes: ["light"],
+    themes: ["garden", "forest"],
   },
   plugins: [
     require("daisyui"),
