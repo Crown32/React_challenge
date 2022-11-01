@@ -11,7 +11,7 @@ const Login = ():JSX.Element => {
   const handleLogin = () => {
     console.log('handleLogin');
     
-    authContext?.signInWithGoogle().then(
+    authContext.signInWithGoogle().then(
       () => {
         console.log("Success");      
       }).catch(

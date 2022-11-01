@@ -9,7 +9,7 @@ interface AuthContextInterface {
   signInWithGoogle: () => Promise<void>;
   logout: () => Promise<void>;
 }
-const AuthContext = createContext<AuthContextInterface | null>(null);
+const AuthContext = createContext<AuthContextInterface>({} as AuthContextInterface );
 export const useAuth = () => useContext(AuthContext);
 
 export const AuthContextProvider = ({children}:AppProps) => {
